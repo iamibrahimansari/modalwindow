@@ -1,0 +1,88 @@
+*,
+*::before *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1;
+    background-image: -moz-linear-gradient(
+        to right,
+        rgb(64, 175, 42),
+        rgb(18, 112, 54)
+    );
+    background-image: linear-gradient(
+        to right,
+        rgb(64, 175, 42),
+        rgb(18, 112, 54)
+    );
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    padding: 2rem;
+}
+
+.container-btn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    font-size: 1.6rem;
+    font-weight: bold;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    cursor: pointer;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.modal-window {
+    position: absolute;
+    top: 30%;
+    left: 37%;
+}
+
+.modal-window div {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 20vw;
+    font-size: 1.4rem;
+    padding: 2rem;
+    position: relative;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.cross {
+    font-size: 3rem;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.paragraph {
+    line-height: 1.5;
+}
+
+.window {
+    display: none;
+}
